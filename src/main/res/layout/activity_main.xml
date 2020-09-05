@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-
-    >
+    tools:context=".MainActivity">
 
 
 
@@ -29,7 +26,7 @@
         android:onClick="numberEvent"
         android:text="0"
         android:textColor="#000000"
-        android:textSize="40pt" />
+        android:textSize="35pt" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -47,7 +44,7 @@
                 android:layout_height="30pt"
                 android:layout_weight="1"
                 android:background="@drawable/my_button"
-                android:text="Apagar"
+                android:text="DEL"
                 android:layout_marginLeft="2dp"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:textColor="@color/cizento"
@@ -55,7 +52,20 @@
 
                 android:onClick="ApagarEvent"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="23sp"/>
+            <Button
+                android:id="@+id/buPi"
+                android:layout_width="30pt"
+                android:layout_marginRight="2pt"
+                android:layout_height="30pt"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_weight="1"
+                android:background="@drawable/my_button"
+                android:text="\u03C0"
+                android:onClick="numberEvent"
+                android:textColor="@color/cizento"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
             <Button
                 android:id="@+id/buPlusMinus"
                 android:layout_width="30pt"
@@ -68,21 +78,8 @@
                 android:layout_marginRight="2pt"
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
-            <Button
-                android:id="@+id/buPercent"
-                android:layout_width="30pt"
-                android:layout_marginRight="2pt"
-                android:layout_height="30pt"
-                android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:layout_weight="1"
-                android:background="@drawable/my_button"
-                android:text="%"
-                android:onClick="percentEvent"
-                android:textColor="@color/cizento"
-                android:textStyle="bold"
+                android:textSize="24sp"/>
 
-                android:textSize="15sp"/>
             <Button
                 android:id="@+id/buDivide"
                 android:layout_width="30pt"
@@ -96,7 +93,7 @@
 
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="24sp"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -117,7 +114,7 @@
                 android:text="7"
                 android:textColor="@color/cizento"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:textStyle="bold" />
 
             <Button
@@ -132,7 +129,7 @@
                 android:layout_marginRight="2pt"
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/bu9"
                 android:layout_width="30pt"
@@ -146,7 +143,7 @@
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
 
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/buMultiply"
                 android:layout_width="30pt"
@@ -155,11 +152,11 @@
                 android:layout_weight="1"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:background="@drawable/my_button2"
-                android:text="X"
+                android:text="x"
                 android:onClick="operatorEvent"
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
 
 
         </TableRow>
@@ -183,7 +180,7 @@
                 android:layout_marginRight="2pt"
                 android:onClick="numberEvent"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/bu5"
                 android:layout_width="30pt"
@@ -196,7 +193,7 @@
                 android:textColor="@color/cizento"
                 android:onClick="numberEvent"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/bu6"
                 android:layout_width="30pt"
@@ -210,7 +207,7 @@
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
 
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/buPlus"
                 android:layout_width="30pt"
@@ -223,7 +220,7 @@
                 android:textColor="@color/cizento"
                 android:onClick="operatorEvent"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
         </TableRow>
 
         <TableRow
@@ -247,7 +244,7 @@
                 android:onClick="numberEvent"
                 android:textStyle="bold"
                 android:layout_marginLeft="2dp"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/bu2"
                 android:layout_width="30pt"
@@ -260,7 +257,7 @@
                 android:onClick="numberEvent"
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/bu3"
                 android:layout_width="30pt"
@@ -274,7 +271,7 @@
                 android:onClick="numberEvent"
                 android:textStyle="bold"
 
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
             <Button
                 android:id="@+id/buMinus"
                 android:layout_width="30pt"
@@ -287,7 +284,7 @@
                 android:textColor="@color/cizento"
                 android:onClick="operatorEvent"
                 android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
         </TableRow>
 
     </TableLayout>
@@ -319,7 +316,7 @@
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:text="0"
                 android:textColor="@color/cizento"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginLeft="2dp"
                 android:textStyle="bold" />
 
@@ -336,20 +333,21 @@
                 android:text="."
                 android:textColor="@color/cizento"
                 android:textStyle="bold"
-                android:textSize="30sp"/>
+                android:textSize="35sp"/>
 
                 <Button
                     android:id="@+id/buEqual"
                     android:foreground="?attr/selectableItemBackgroundBorderless"
-                    android:layout_width="30pt"
+                    android:layout_width="24pt"
                     android:layout_height="30pt"
-                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="0dp"
                     android:layout_weight="1"
                     android:background="@drawable/my_button2"
-                    android:onClick="equalEvent"
-                    android:text="="
+                    android:text="@string/equal"
                     android:textColor="@color/cizento"
-                    android:textSize="15sp"
+                    android:textSize="25sp"
+                    android:onClick="equalEvent"
                     android:textStyle="bold" />
 
             </TableRow>
